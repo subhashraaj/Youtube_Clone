@@ -8,8 +8,9 @@ function displayVideos(videos){
         document.querySelector("#videoContainer").innerHTML+=
         `
             <a href= "/video.html?videoId=${video.id.videoId}">
-                <li>
-                    <img src="${video.snippet.thumbnails.high.url}"/> <p>${video.snippet .title}</p>
+                <li style="list-style:none" >
+                    <img style="padding-top:10px;" heigth="150px" width="300px" src="${video.snippet.thumbnails.high.url}"/> 
+                    <p style="width:150px height:50px">${video.snippet .title}</p>
                 </li>
             <a>
         `
@@ -19,7 +20,7 @@ function displayVideos(videos){
 
 
 function getVideo(query){
-    fetch(`${BASE_URL}/search?key=${API_Key}&q=${query}&type=video&maxResults=10&part=snippet`)
+    fetch(`${BASE_URL}/search?key=${API_Key}&q=${query}&type=video&maxResults=10&part=snippet&maxResults=20`)
         .then((res)=> res.json())
         .then((data)=> {
             console.log(data);
@@ -28,6 +29,7 @@ function getVideo(query){
 };
 
 searchBtn.addEventListener("click", ()=>{
+    document.querySelector(".sideControls>div").style.display = "none";
     getVideo(document.querySelector("#searchInput").value);
 
-})
+});

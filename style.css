@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+
+#header{
+    padding:10px;
+    height: 30px;
+    width: 97.vw;
+    background-color: #212121;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoBtn>button{
+    margin-left: 30px;
+    background-color:#212121;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+
+}
+#body{
+    display: flex;
+}
+.searchOption>input{
+    background-color: #121212;
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+.microphone{
+    padding-left: 20px;
+    
+}
+.notify>i{
+    margin-left:25px ;
+}
+
+.sideControls{
+    height: 100%;
+    width: 240px;
+    background-color: #212121;
+    
+}
+.subscriptionControl>h5{
+    font-weight: 300;
+    color: #aaaaaa;
+    margin: 15px;
+}
+.subscriptionControl>img{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.contentSection{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+#videoContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
